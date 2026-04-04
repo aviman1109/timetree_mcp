@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "timetree-multi-mcp"
+version = "0.1.0"
+description = "Multi-account TimeTree MCP server with SDK-first and web fallback providers"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.23.0",
+    "PyYAML>=6.0.2",
+    "python-dotenv==1.0.1",
+    "requests>=2.32.0",
+    "uvicorn>=0.30.0",
+]
+
+[project.scripts]
+timetree-multi-mcp = "timetree_multi_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/timetree_multi_mcp"]

@@ -1,0 +1,14 @@
+default_account_id: family_web
+
+accounts:
+  - account_id: family_web
+    label: Family TimeTree
+    provider: web
+    default_calendar_id: "123456789"
+    email_file: /run/secrets/timetree_family_email
+    password_file: /run/secrets/timetree_family_password
+
+  - account_id: legacy_sdk
+    label: Legacy Official API Account
+    provider: sdk
+    access_token_file: /run/secrets/timetree_legacy_access_token
