@@ -9,7 +9,7 @@ description = "Multi-account TimeTree MCP server with SDK-first and web fallback
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "mcp>=1.23.0",
+    "mcp>=1.23.0,<2",
     "PyYAML>=6.0.2",
     "python-dotenv==1.0.1",
     "requests>=2.32.0",
